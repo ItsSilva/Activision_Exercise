@@ -17,9 +17,6 @@ class Banner extends HTMLElement {
     }
     render(){
         this.shadowRoot.innerHTML = `
-        <section>
-        <h1>Hi banner component</h1>
-        </section>
         `;
     }
 }

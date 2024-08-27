@@ -1,6 +1,6 @@
 import * as components from './components/indexFather.js';
 
-class BannerContainer extends HTMLElement {
+class Container extends HTMLElement {
     constructor(){
         super();
             this.attachShadow({mode: 'open'});
@@ -10,8 +10,8 @@ class BannerContainer extends HTMLElement {
     }
     render(){
         this.shadowRoot.innerHTML = `
-        <banner-component></banner-component>
+        <navbar-component></navbar-component>
          `
     }
 }
-customElements.define('banner-container', BannerContainer);
+customElements.define('app-container', Container);
