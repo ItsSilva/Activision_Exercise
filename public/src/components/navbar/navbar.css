@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080706;
+    color: white;
+    height: 60px;
+}
+
+.container-logo-img a img{
+    height: 30px;
+    padding: 1rem;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container-list li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.button {
+    display: flex;
+    gap: 20px;
+}

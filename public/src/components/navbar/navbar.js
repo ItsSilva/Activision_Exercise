@@ -1,7 +1,6 @@
 class Navbar extends HTMLElement {
 
     static get observedAttributes(){
-
     }
     constructor(){
         super();
@@ -17,14 +16,15 @@ class Navbar extends HTMLElement {
     }
     render(){
         this.shadowRoot.innerHTML = `
-        <header>
+        <link rel="stylesheet" href="./src/components/navbar/navbar.css">
+        <header class = 'container'>
 
-            <div>
-                <a href="index.html">Skip To Main Content</a>
+            <div class = 'container-logo-img'>
+                <a href=""><img src="./src/utils/img/Activision.svg.png" alt="Activision Logo"></a>
             </div>
 
             <nav>
-                <ul>
+                <ul class = 'container-list'>
                     <li>Games</li>
                     <li>About</li>
                     <li>Work</li>
@@ -32,9 +32,9 @@ class Navbar extends HTMLElement {
                 </ul>
             </nav>
 
-            <div>
+            <div class = 'button'>
 
-                <div>
+                <div class = 'button-register'>
                     <a href="index.html">Register</a>
                 </div>
 
