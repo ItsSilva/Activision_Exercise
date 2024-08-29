@@ -28,10 +28,10 @@ class Navbar extends HTMLElement {
 
             <nav>
                 <ul class = 'container-list'>
-                    <li>Games</li>
-                    <li><i class="fa fa-angle-down"></i>About</li>
-                    <li><i class="fa fa-angle-down"></i>Work</li>
-                    <li><i class="fa fa-angle-down"></i>Support</li>
+                    <li><a href="#">Games</a></li>
+                    <li><i class="fa fa-angle-down"></i><a href="#">About</a></li>
+                    <li><i class="fa fa-angle-down"></i><a href="#">Work</a></li>
+                    <li><i class="fa fa-angle-down"></i><a href="#">Support</a></li>
                 </ul>
             </nav>
         </div>
