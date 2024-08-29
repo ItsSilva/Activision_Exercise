@@ -16,36 +16,40 @@ class Navbar extends HTMLElement {
     }
     render(){
         this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="./src/components/navbar/navbar.css">
-        <header class = 'container'>
+    <link rel="stylesheet" href="./src/components/navbar/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <header class = 'container'>
+
+        <div class ='logo-and-nav-container'>
             <div class = 'container-logo-img'>
-                <a href=""><img src="./src/utils/img/Activision.svg.png" alt="Activision Logo"></a>
+                <a href="./index.html"><img src="./src/utils/img/Activision.svg.png" alt="Activision Logo"></a>
             </div>
 
             <nav>
                 <ul class = 'container-list'>
                     <li>Games</li>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Support</li>
+                    <li><i class="fa fa-angle-down"></i>About</li>
+                    <li><i class="fa fa-angle-down"></i>Work</li>
+                    <li><i class="fa fa-angle-down"></i>Support</li>
                 </ul>
             </nav>
+        </div>
 
             <div class = 'button'>
 
                 <div class = 'button-register'>
-                    <a href="index.html">Register</a>
+                    <a href="index.html">Sing up</a>
                 </div>
 
-                <div>
-                    <a href="index.html">Log In</a>
+                <div class = 'button-login'>
+                    <a href="index.html">LogIn</a>
                 </div>
 
             </div>
 
         </header>
-        `;
+    `;
     }
 }
 customElements.define('navbar-component', Navbar);

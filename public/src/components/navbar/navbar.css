@@ -5,6 +5,18 @@
     background-color: #080706;
     color: white;
     height: 60px;
+    padding: 0 7rem;
+    opacity: 0.9;
+    border-bottom: 1px solid #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-and-nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-logo-img a img{
@@ -17,15 +29,54 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 
 .container-list li {
     list-style: none;
-    padding: 1rem;
+    padding: 0 1rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
 }
 
 .button {
     display: flex;
-    gap: 20px;
+    flex-direction: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 120px;
+    background-color: #074A7C;
+    border: 2px solid #065E9E;
+    border-radius: 2rem;
+}
+
+.button-register a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 120px;
+}
+
+.button-login a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    text-transform: uppercase;
 }
