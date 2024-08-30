@@ -23,7 +23,7 @@ class Navbar extends HTMLElement {
 
         <div class ='logo-and-nav-container'>
             <div class = 'container-logo-img'>
-                <a href="./index.html"><img src="./src/utils/img/Activision.svg.png" alt="Activision Logo"></a>
+                <a href="./index.html"><img src="./src/assets/img/Activision.svg.png" alt="Activision Logo"></a>
             </div>
 
             <nav>
