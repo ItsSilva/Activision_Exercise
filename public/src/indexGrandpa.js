@@ -1,5 +1,4 @@
 import * as components from './components/indexFather.js';
-
 class Container extends HTMLElement {
     constructor(){
         super();
@@ -20,8 +19,16 @@ class Container extends HTMLElement {
         button00 = "Pre-Order Now"
         button01 = "Visit site"
         ></banner-component>
-
-         `
+        
+        <news-logos        
+        text = "Latest News & Articles"
+        img = "./src/assets/img/Rectangle 876.png"
+        img1 = "./src/assets/img/rectangle872.png"
+        img2 = "./src/assets/img/Rectangle 873.png"
+        img3 = "./src/assets/img/Rectangle 874.png"
+        img4 = "./src/assets/img/Rectangle 875.png"
+        </news-logos>
+        `
     }
 }
 customElements.define('app-container', Container);
