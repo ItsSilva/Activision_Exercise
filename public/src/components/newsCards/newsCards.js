@@ -1,34 +1,40 @@
 class NewsCards extends HTMLElement {
-    static get observedAttribute (){
-        return ['img', 'date','tittle', 'description', 'more'];
-    };
-    constructor(){
+    static get observedAttributes() {
+        return ['image', 'date', 'title', 'description', 'more'];
+    }
+
+    constructor() {
         super();
         this.attachShadow({mode: 'open'});
-    };
-    connectedCallback(){
+    }
+
+    connectedCallback() {
         this.render();
-    };
-    attributeChangedCallback(propName, oldValue, newValue){
-        if(oldValue !== newValue){
-            this[propName] = newValue
-        };
-    };
-    render(){
+    }
+
+    attributeChangedCallback(propName, oldValue, newValue) {
+        if (oldValue !== newValue) {
+            this[propName] = newValue;
+            this.render();
+        }
+    }
+
+    render() {
         this.shadowRoot.innerHTML = `
-        <section class = 'container'>
-        <div class = 'img-container'>
-        <img src="${this.img}" alt="#"/>
-        </div>
-        <div class = 'text-container'>
-        <p>${this.date}</p>
-        <h2>${this.tittle}</h2>
-        <p>${this.description}</p>
-        <button>${this.more}</button>
-        </div>
+        <section class="container">
+            <div class="img-container">
+                <img src="${this.image}" alt="News image"/>
+            </div>
+            <div class="text-container">
+                <p>${this.date}</p>
+                <h2>${this.title}</h2>
+                <p>${this.description}</p>
+                <button>${this.more}</button>
+            </div>
         </section>
         `;
-    };
-};
+    }
+}
+
 customElements.define('news-cards', NewsCards);
 export default NewsCards;

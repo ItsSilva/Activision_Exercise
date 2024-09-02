@@ -1,4 +1,5 @@
 import * as components from './components/indexFather.js';
+import { newsCardsData } from './data/newsCardsData/newsCardsData.js';
 class Container extends HTMLElement {
     constructor(){
         super();
@@ -29,6 +30,17 @@ class Container extends HTMLElement {
         img4 = "./src/assets/img/Rectangle 875.png"
         </news-logos>
         `
+        newsCardsData.forEach((e) => {
+            this.shadowRoot.innerHTML += `
+            <news-cards
+            image = "${e.image}"
+            date = "${e.date}"
+            title = "${e.title}"
+            description = "${e.description}"
+            more = "Read More"
+            ></news-cards>
+            `
+        })
     }
 }
 customElements.define('app-container', Container);
