@@ -21,6 +21,7 @@ class NewsCards extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="./src/components/newsCards/newsCards.css">
         <section class="container">
             <div class="img-container">
                 <img src="${this.image}" alt="News image"/>
