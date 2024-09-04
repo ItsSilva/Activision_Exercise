@@ -49,6 +49,22 @@ class Container extends HTMLElement {
     });
 
     this.shadowRoot.appendChild(container); // Append container to shadowRoot.
+
+    this.shadowRoot.innerHTML += `
+<link rel="stylesheet" href="./src/components/banner/banner.css">
+            <div class="button-view-all">
+                <div class="button-login">
+                    <a href="index.html">VIEW ALL</a>
+                </div>
+            </div>
+
+            <support-banner
+            title="We're here to help!"
+            description='Get answers to frequently asked questions, check server status, and engage with a support expert'
+            button='VISIT SUPPORT'
+            image='./src/assets/img/Screenshot 2024-09-02 175049.png'>
+            </support-banner>
+    `
   }
 }
 

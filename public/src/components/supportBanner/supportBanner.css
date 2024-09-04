@@ -1,0 +1,19 @@
+.support-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+
+.support-banner-text button{
+    
+}
