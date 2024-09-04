@@ -88,6 +88,22 @@ class Container extends HTMLElement {
     ></community-component>
   </div>
 </section>
+
+<havefun-component
+    h2="Have Fun"
+    description="Learn more about job opportunities"
+    teams="OUR TEAMS"
+    li00="Game Design"
+    li01="Art & Animation"
+    li02="Brand Management"
+    li03="Production"
+    li04="Quality Assurance"
+    li05="Customer Support"
+    li06="Studio Operations"
+    li07="Programming"
+    li08="Finance & Accounting"
+    li09="Human Resources"
+></havefun-component>
     `
   }
 }
