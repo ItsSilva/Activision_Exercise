@@ -65,27 +65,27 @@ class Container extends HTMLElement {
             image='./src/assets/img/Screenshot 2024-09-02 175049.png'>
             </support-banner>
 
-<link rel="stylesheet" href="./src/components/comments/comments.css">
+<link rel="stylesheet" href="./src/components/community/community.css">
 <section class="shadow-container">     
   <h1 class="title-community">Community</h1>   
   <div class="shadow-card-container">
-    <comments-banner
+    <community-component
       picture="./src/assets/img/457612352_1279991166711562_2135084959069529567_n.jpg"
       username="callofdutyendowment"
       icon="./src/assets/img/toppng.com-white-instagram-icon-instagram-logo-instagram-instagram-icon-white-306x304.png"
-    ></comments-banner>
+    ></community-component>
 
-    <comments-banner
+    <community-component
       picture="./src/assets/img/457024224_743870651167307_7401446175988037682_n.jpg"
       username="callofdutyendowment"
       icon="./src/assets/img/toppng.com-white-instagram-icon-instagram-logo-instagram-instagram-icon-white-306x304.png"
-    ></comments-banner>
+    ></community-component>
 
-    <comments-banner
+    <community-component
       picture="./src/assets/img/457632007_18078057127523543_4908097477892020968_n.jpg"
       username="callofdutyendowment"
       icon="./src/assets/img/toppng.com-white-instagram-icon-instagram-logo-instagram-instagram-icon-white-306x304.png"
-    ></comments-banner>
+    ></community-component>
   </div>
 </section>
     `

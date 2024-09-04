@@ -3,4 +3,4 @@ export {default as Navbar} from './navbar/navbar.js';
 export {default as News} from './news/news.js';
 export {default as NewsCards} from './newsCards/newsCards.js';
 export {default as SupportBanner} from './supportBanner/supportBanner.js';
-export {default as Comments} from './comments/comments.js';
+export {default as Community} from './community/community.js';

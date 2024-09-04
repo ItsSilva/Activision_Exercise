@@ -1,4 +1,4 @@
-class Comments extends HTMLElement {
+class Community extends HTMLElement {
     static get observedAttributes() {
         return ['picture', 'username', 'icon']
     }
@@ -20,7 +20,7 @@ class Comments extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
-<link rel="stylesheet" href="./src/components/comments/comments.css">
+<link rel="stylesheet" href="./src/components/community/community.css">
 <section class="card-container">
   <div class="card">
     <img src="${this.picture}" alt="User Picture" class="card-image" />
@@ -34,5 +34,5 @@ class Comments extends HTMLElement {
     }
 }
 
-customElements.define('comments-banner', Comments)
-export default Comments
+customElements.define('community-component', Community)
+export default Community
