@@ -12,13 +12,11 @@ class Container extends HTMLElement {
   }
 
   render() {
-    const container = document.createElement('div'); // Create a container element.
-    container.classList.add('news-cards-container'); // Add a class.
-
+    const container = document.createElement('div');
+    container.classList.add('news-cards-container');
     this.shadowRoot.innerHTML = `
-    <link rel="stylesheet" href="./src/components/newsCards/newsCards.css">
+      <link rel="stylesheet" href="./src/components/newsCards/newsCards.css">
       <navbar-component></navbar-component>
-
       <banner-component
         img="./src/assets/img/94f5e08d4f2ef3e70d7aa0f9fc3de5b2.jpg"
         alt="Call of Duty Black Ops 6 character"
@@ -37,27 +35,26 @@ class Container extends HTMLElement {
         img4="./src/assets/img/Rectangle 875.png"
       ></news-logos>
     `;
-
+    
     newsCardsData.forEach((e) => {
       const newsCard = document.createElement('news-cards');
       newsCard.setAttribute('image', e.image);
       newsCard.setAttribute('date', e.date);
       newsCard.setAttribute('title', e.title);
       newsCard.setAttribute('description', e.description);
-      newsCard.setAttribute('more', 'Read More');
-      container.appendChild(newsCard); // Append newsCard to the container.
+      newsCard.setAttribute('more', 'READ MORE »');
+      container.appendChild(newsCard);
     });
-
-    this.shadowRoot.appendChild(container); // Append container to shadowRoot.
-
+  
+    container.innerHTML += `
+      <link rel="stylesheet" href="./src/components/banner/banner.css">
+      <div class="button-view-all">
+        <button class="view-all-button">VIEW ALL</button>
+      </div>
+    `;
+    this.shadowRoot.appendChild(container);
+    
     this.shadowRoot.innerHTML += `
-<link rel="stylesheet" href="./src/components/banner/banner.css">
-            <div class="button-view-all">
-                <div class="button-login">
-                    <a href="index.html">VIEW ALL</a>
-                </div>
-            </div>
-
             <support-banner
             title="We're here to help!"
             description='Get answers to frequently asked questions, check server status, and engage with a support expert'

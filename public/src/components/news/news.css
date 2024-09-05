@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: radial-gradient(40% 20% at 50% 0, rgba(104, 104, 104, 0.85), #111111);
+    /* background-image: radial-gradient(40% 20% at 50% 0, rgba(104, 104, 104, 0.85), #111111); */
     padding: 50px 0;
 }
 
