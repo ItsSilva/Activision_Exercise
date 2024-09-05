@@ -61,7 +61,6 @@ class Container extends HTMLElement {
             <support-banner
             title="We're here to help!"
             description='Get answers to frequently asked questions, check server status, and engage with a support expert'
-            button='VISIT SUPPORT'
             image='./src/assets/img/Screenshot 2024-09-02 175049.png'>
             </support-banner>
 

@@ -1,6 +1,6 @@
 class SupportBanner extends HTMLElement {
     static get observedAttributes() {
-        return ['title', 'description', 'button', 'image']
+        return ['title', 'description', 'image']
     }
 
     constructor() {
@@ -26,7 +26,11 @@ class SupportBanner extends HTMLElement {
                 <div class='support-banner-text'>
                     <h1>${this.title}</h1>
                     <p>${this.description}</p>
-                    <button>${this.button}</button>
+             <div class="button-view-all">
+                <div class="button-login">
+                    <a href="index.html">VISIT SUPPORT</a>
+                </div>
+            </div>
                 </div>
                 <div class='support-banner-img'>
                     <img src="${this.image}" alt="Support Banner Image" />
