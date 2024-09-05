@@ -25,15 +25,17 @@ class Container extends HTMLElement {
         button00="Pre-Order Now"
         button01="Visit site"
       ></banner-component>
-      
-      <news-logos
-        text="Latest News & Articles"
-        img="./src/assets/img/Rectangle 876.png"
-        img1="./src/assets/img/rectangle872.png"
-        img2="./src/assets/img/Rectangle 873.png"
-        img3="./src/assets/img/Rectangle 874.png"
-        img4="./src/assets/img/Rectangle 875.png"
-      ></news-logos>
+    
+      <section class="featured-news">
+        <news-logos
+          text="Latest News & Articles"
+          img="./src/assets/img/Rectangle 876.png"
+          img1="./src/assets/img/rectangle872.png"
+          img2="./src/assets/img/Rectangle 873.png"
+          img3="./src/assets/img/Rectangle 874.png"
+          img4="./src/assets/img/Rectangle 875.png"
+        ></news-logos>
+      </section>
     `;
     
     newsCardsData.forEach((e) => {
@@ -45,14 +47,17 @@ class Container extends HTMLElement {
       newsCard.setAttribute('more', 'READ MORE »');
       container.appendChild(newsCard);
     });
-  
+    
+    const featuredNews = this.shadowRoot.querySelector('.featured-news');
+    featuredNews.appendChild(container);
+    
     container.innerHTML += `
-      <link rel="stylesheet" href="./src/components/banner/banner.css">
-      <div class="button-view-all">
-        <button class="view-all-button">VIEW ALL</button>
-      </div>
+            <div class="button-view-all">
+                <div class="button-login">
+                    <a href="index.html">VIEW ALL</a>
+                </div>
+            </div>
     `;
-    this.shadowRoot.appendChild(container);
     
     this.shadowRoot.innerHTML += `
             <support-banner

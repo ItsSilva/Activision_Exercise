@@ -1,3 +1,7 @@
+.featured-news{
+  background-image: radial-gradient(40% 20% at 50% 0, rgba(104, 104, 104, 0.85), #111111);
+}
+
 .news-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -5,7 +9,6 @@
   padding: 20px;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: #000000;
 }
 
 .container {
@@ -14,6 +17,8 @@
   background-color: #1E1E1E;
   border-radius: 1rem;
   overflow: hidden;
+  background: radial-gradient(100% 100% at 50.52% 0%, #686868 0%, #000000 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .img-container {
@@ -30,7 +35,6 @@
 
 .text-container {
   padding: 20px;
-  background-color: #1E1E1E;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -55,7 +59,7 @@
 
 .text-container button {
   background-color: transparent;
-  color: #F1B203;
+  color: #ffffff;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -67,15 +71,28 @@
   grid-column: 1 / -1;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 5rem;
 }
 
-.view-all-button {
+.button-register,
+.button-login {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 20%;
+  margin: auto;
   border-radius: 2rem;
-  border: 2px solid white;
-  background-color: black;
-  color: white;
-  padding: 1rem 6rem;
+}
+
+.button-register a,
+.button-login a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.button-login {
+    border: 2px solid white;
 }
