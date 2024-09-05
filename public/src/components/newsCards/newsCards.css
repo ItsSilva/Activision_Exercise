@@ -9,6 +9,8 @@
   padding: 20px;
   max-width: 1600px;
   margin: 0 auto;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .container {
@@ -19,6 +21,8 @@
   overflow: hidden;
   background: radial-gradient(100% 100% at 50.52% 0%, #686868 0%, #000000 100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 450px;
+  max-height: 450px;
 }
 
 .img-container {
