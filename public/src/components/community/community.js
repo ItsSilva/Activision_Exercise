@@ -23,13 +23,13 @@ class Community extends HTMLElement {
 <link rel="stylesheet" href="./src/components/community/community.css">
 <section class="card-container">
   <div class="card">
-    <img src="${this.picture}" alt="User Picture" class="card-image" />
-    <div class="card-content">
-      <p class="username">${this.username}</p>
+    <div class="overlay">
       <img src="${this.icon}" alt="Icon" class="icon" />
+      <p class="username">${this.username}</p>
     </div>
+    <img src="${this.picture}" alt="User Picture" class="card-image" />
   </div>
-</section>   
+</section>
         `
     }
 }
