@@ -21,18 +21,22 @@ class NewsCards extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="./src/components/newsCards/newsCards.css">
-        <section class="container">
-            <div class="img-container">
-                <img src="${this.image}" alt="News image"/>
-            </div>
-            <div class="text-container">
-                <p>${this.date}</p>
-                <h2>${this.title}</h2>
-                <p>${this.description}</p>
-                <button>${this.more}</button>
-            </div>
-        </section>
+<link rel="stylesheet" href="./src/components/newsCards/newsCards.css">
+<div class="card">
+  <section class="container">
+    <div class="img-container">
+      <img src="${this.image}" alt="News image"/>
+    </div>
+    <div class="text-container">
+      <p class="date">${this.date}</p>
+      <h2>${this.title}</h2>
+      <div class="description">
+        <p>${this.description}</p>
+      </div>
+      <button>${this.more}</button>
+    </div>
+  </section>
+</div>
         `;
     }
 }
