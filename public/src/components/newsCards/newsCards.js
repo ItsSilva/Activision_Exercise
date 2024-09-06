@@ -30,6 +30,7 @@ class NewsCards extends HTMLElement {
     <div class="text-container">
       <p class="date">${this.date}</p>
       <h2>${this.title}</h2>
+      <div class="blog-divider-wrapper"><div class="blog-divider"></div></div>
       <div class="description">
         <p>${this.description}</p>
       </div>

@@ -75,7 +75,7 @@
   line-height: 1.4;
   margin-bottom: 10px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, height 0.3s ease;
   height: 0;
 }
 
@@ -84,6 +84,71 @@
   height: auto;
 }
 
+.text-container button {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.blog-divider, .blog-divider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin: 14px 0;
+  z-index: 0;
+}
+
+.blog-divider-wrapper::before {
+  content: " ";
+  position: absolute;
+  top: 14px;;
+  left: 93%;
+  bottom: 0;
+  width: 75px;
+  height: 1px;
+  background-color: #b3b6b7;
+  z-index: 1;
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  transition: all .3s ease;
+}
+
+.blog-divider::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 65px;
+  height: 10px;
+  background-color: #b3b6b7;
+  z-index: 1;
+  transition: all .3s ease;
+}
+
+.blog-divider::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 93%;
+  height: 1px;
+  background-color: #b3b6b7;
+  z-index: 1;
+  transition: all .3s ease;
+}
+
+.card:hover .blog-divider::before,
+.card:hover .blog-divider::after,
+.card:hover .blog-divider-wrapper::before {
+  background-color: #0088ff;
+}
 .text-container button {
   background-color: transparent;
   color: #ffffff;
