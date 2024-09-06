@@ -84,6 +84,10 @@
   height: auto;
 }
 
+.card:hover .text-container button {
+  color: #0088ff; 
+}
+
 .text-container button {
   background-color: transparent;
   color: #ffffff;
